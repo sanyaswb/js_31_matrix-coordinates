@@ -9,23 +9,25 @@
 - Количество внутренних массивов и элементов в них - динамическое.
 
 ## Примеры
-- <p style="display: flex; flex-direction: column; margin-left: 15px">([
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, <span style="color: orange;">1</span>, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ] </span>
-  ]) => { x: 4, y: 2 } </p>
-- <p style="display: flex; flex-direction: column; margin-left: 15px">([
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, <span style="color: orange;">1</span>, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, 0, 0, 0, 0, 0 ] </span>
-  ]) => { x: 1, y: 2 } </p>
-- <p style="display: flex; flex-direction: column; margin-left: 15px">([
-    <span style="padding-left: 10px;"> [ 0, 0 ] </span>
-    <span style="padding-left: 10px;"> [ 0, <span style="color: orange;">1</span> ] </span>
+```
+- ([
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 1, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  ]) => { x: 4, y: 2 }
+- ([
+    [ 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0 ],
+    [ 0, 1, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0 ]
+  ]) => { x: 1, y: 2 }
+- ([
+    [ 0, 0 ]
+    [ 0, 1 ]
   ]) => { x: 1, y: 1 } </p>
+```
