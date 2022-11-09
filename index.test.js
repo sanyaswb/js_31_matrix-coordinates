@@ -95,8 +95,6 @@ test('Auto: random outcomes', () => {
 	for (let i = 0; i < 20; i++) {
 		const matrix = generateMatrix();
 
-		console.log(matrix);
-
 		const solutionResult = solution(matrix);
 		const userResult = getMatrix(matrix);
 
