@@ -1,6 +1,6 @@
-const matrixCoordinates = require('../index');
+const getCoordinates = require('../index');
 
-matrixCoordinates([
+getCoordinates([
 	[0, 0],
 	[0, 1]
 ]);

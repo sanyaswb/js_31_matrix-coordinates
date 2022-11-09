@@ -1,9 +1,9 @@
-const getMatrix = require('./index');
+const getCoordinates = require('./index');
 const solution = require('./system/solution');
 const { getRandomInt } = require('./system/environment');
 
 test('Функция должна вернуть объект в виде: { x: number, y: number }', () => {
-	const res = getMatrix([
+	const res = getCoordinates([
 		[0, 0],
 		[0, 1]
 	]);
@@ -16,7 +16,7 @@ test('Функция должна вернуть объект в виде: { x: 
 });
 
 test('Тест. x = 1, y = 1', () => {
-	const res = getMatrix([
+	const res = getCoordinates([
 		[0, 0],
 		[0, 1]
 	]);
@@ -26,7 +26,7 @@ test('Тест. x = 1, y = 1', () => {
 });
 
 test('Тест. x = 1, y = 2', () => {
-	const res = getMatrix([
+	const res = getCoordinates([
 		[ 0, 0, 0, 0, 0, 0 ],
 		[ 0, 0, 0, 0, 0, 0 ],
 		[ 0, 1, 0, 0, 0, 0 ],
@@ -42,7 +42,7 @@ test('Тест. x = 1, y = 2', () => {
 });
 
 test('Тест. x = 8, y = 4', () => {
-	const res = getMatrix([
+	const res = getCoordinates([
 		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -55,7 +55,7 @@ test('Тест. x = 8, y = 4', () => {
 });
 
 test('Тест. x = 3, y = 6', () => {
-	const res = getMatrix([
+	const res = getCoordinates([
 		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -96,7 +96,7 @@ test('Auto: random outcomes', () => {
 		const matrix = generateMatrix();
 
 		const solutionResult = solution(matrix);
-		const userResult = getMatrix(matrix);
+		const userResult = getCoordinates(matrix);
 
 		expect(userResult.x).toBe(solutionResult.x);
 		expect(userResult.y).toBe(solutionResult.y);
